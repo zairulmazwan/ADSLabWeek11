@@ -1,6 +1,10 @@
 ﻿// List<int> data = FileData.genData(5);
 // FileData.printList(data);
 
+List<double> dataset = FileData.readData("dataset.csv");
+FileData.printList(dataset);
+
+
 // List<Double> dataDouble = FileData.genDoubleData(100);
 // FileData.printList(dataDouble);
 // FileData.writeFile(dataDouble,"dataset.csv");
@@ -19,7 +23,7 @@
 // hc2.solution = hc.copySolution();
 
 // Console.WriteLine(hc.fitness);
-Experiment.runExp();
+// Experiment.runExp();
 
 
 //©Zairul Mazwan©
