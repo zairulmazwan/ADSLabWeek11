@@ -23,7 +23,7 @@ public class HillClimbing
     {
         foreach(int x in solution)
         {
-            Console.WriteLine(x);
+            Console.Write(x);
         }
     }
 
@@ -84,7 +84,27 @@ public class Experiment
 {
     public static void runExp ()
     {
+        Console.WriteLine("Running Experiments...");
+
+        //Declare a 2D array to save the experiment results. Should be size of [iter,3], col 0: iter, col 1: current fitness, col 2: new fitness
         
+        //Declare a list of list variable to store the solutions
+
+        //Read the dataset
+
+        //Initialise a random solution for HC
+
+        //Loop until iter to search the solution using HC
+
+        //Within the loop, create a new solution from the initial solution. Copy and small change are required for this task.
+
+        //The common sense: Compare the fitness values current and new solutions. If new solution is better than the current,
+        // set current solution = new solution
+
+        //Write the results for current fitness and new fitness for this iter.
+
+        //Outside the for loop write the final solution to a csv file, write the results to a csv file.
+
     }
 }
 
