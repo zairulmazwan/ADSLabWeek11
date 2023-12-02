@@ -1,3 +1,5 @@
+using System.Security.Cryptography;
+
 public class HillClimbing
 {
     public List<int> solution;
@@ -55,10 +57,11 @@ public class HillClimbing
         return fitness;
     }
 
-    public List<int> copySolution()
+    public HillClimbing  copySolution()
     {
-        List<int> res = new List<int>();
-        res = solution.ToList();
+        HillClimbing res = (HillClimbing)this.MemberwiseClone();
+        res.solution = new(solution);
+        res.fitness = fitness;
         return res;
     }
 
@@ -77,6 +80,7 @@ public class HillClimbing
         {
             solution[ind] = 0;
         }
+        calCurrentFit();
     }
 }
 
