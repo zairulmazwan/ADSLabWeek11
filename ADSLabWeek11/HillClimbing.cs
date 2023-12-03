@@ -57,7 +57,7 @@ public class HillClimbing
         return fitness;
     }
 
-    public HillClimbing  copySolution()
+    public HillClimbing  copySolution() //This copy method WILL NOT read the address of the object being copied.
     {
         HillClimbing res = (HillClimbing)this.MemberwiseClone();
         res.solution = new(solution);
@@ -80,7 +80,7 @@ public class HillClimbing
         {
             solution[ind] = 0;
         }
-        calCurrentFit();
+        calCurrentFit();//This is crucial! To update the fitness value after we perform small change
     }
 }
 
