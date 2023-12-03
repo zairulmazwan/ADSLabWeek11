@@ -92,7 +92,7 @@ public class Experiment
 
         //Declare a 2D array to save the experiment results. Should be size of [iter,3], col 0: iter, col 1: current fitness, col 2: new fitness
         
-        //Declare a list of list variable to store the solutions. However this is not compulsory to have.
+        //Declare a list of list variable to store the solutions. However this is not compulsory to have. I keep the solutions for validation purposes
 
         //Read the dataset
 
